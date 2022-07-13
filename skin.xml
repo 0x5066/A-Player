@@ -15,5 +15,6 @@
 	<include file="xml/main.xml"/>
 
     <script file="scripts/wa2songtimer.maki"/>
+    <script file="scripts/wa2visualizer.maki"/>
 
 </WinampAbstractionLayer>

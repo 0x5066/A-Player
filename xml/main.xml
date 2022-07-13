@@ -4,7 +4,8 @@
     <rect x="11" y="33" w="146" h="54" color="255,255,255" filled="1"/>
     <rect x="11" y="33" w="146" h="54" color="0,0,0"/>
 
-    <vis x="12" y="34" w="144" h="52" colorallosc="0,0,0" colorosc5="0,0,0" fps="60" colorallbands="0,0,0" colorbandpeak="0,0,0"/>
+    <vis id="wa.vis" x="12" y="34" w="144" h="52" colorallosc="0,0,0" colorosc5="0,0,0" fps="60" colorallbands="0,0,0" colorbandpeak="0,0,0"/>
+    <layer id="main.vis.trigger" x="12" y="34" w="144" h="52"/>
 
     <text x="160" y="33" w="900" h="9" text="Decoder Info" font="async.font" color="0,0,0"/>
     <text x="160" y="42" w="900" h="9" text="Audio/Video" font="async.font" color="0,0,0"/>
