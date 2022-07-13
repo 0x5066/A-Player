@@ -1,5 +1,6 @@
 <elements>
 
+    <bitmap id="br_bg" file="images/br_bg.png"/>
     <bitmap id="mainbg" file="images/main.png"/>
     <bitmap id="async" file="images/text.png"/>
     <bitmap id="asynclogo" file="images/ASYNC.png"/>
