@@ -1,0 +1,16 @@
+<groupdef id="mainwindow">
+
+    <layer image="mainbg"/>
+    <rect x="11" y="33" w="146" h="54" color="255,255,255" filled="1"/>
+    <rect x="11" y="33" w="146" h="54" color="0,0,0"/>
+
+    <vis x="12" y="34" w="144" h="52" colorallosc="0,0,0" colorosc5="0,0,0" fps="60" colorallbands="0,0,0" colorbandpeak="0,0,0"/>
+
+</groupdef>
+
+
+<container id="main" name="Main Window" default_y="0" default_visible="1" minimum_w="352" minimum_h="163" maximum_w="352" maximum_h="163">
+	<layout id="normal" background="mainbg" minimum_w="352" minimum_h="163" maximum_w="352" maximum_h="163" desktopalpha="1" droptarget="pldr">
+		<group id="mainwindow" w="352" h="163"/>
+	</layout>
+</container>

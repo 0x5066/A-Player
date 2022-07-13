@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<WinampAbstractionLayer version="1.35">
+	<skininfo>
+		<version>-</version>
+		<name>-</name>
+		<comment>-</comment>
+		<author>-</author>
+		<email>-</email>
+		<wacupscreenshot></wacupscreenshot>
+		<screenshot></screenshot>
+	</skininfo>
+
+	<include file="xml/elements.xml"/>
+	<include file="xml/main.xml"/>
+
+</WinampAbstractionLayer>
