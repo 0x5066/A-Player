@@ -5,5 +5,6 @@
     <bitmap id="asynclogo" file="images/ASYNC.png"/>
     <bitmapfont id="async.font" file="async" charwidth="9" charheight="8" hspacing="0" vspacing="0"/>
     <bitmapfont id="player.BIGNUM" file="images/numfont.png" charwidth="15" charheight="15" hspacing="-3" vspacing="1"/>
+    <bitmap id="wallpaper" file="images/wallpaper.png"/>
 
 </elements>

@@ -1,6 +1,14 @@
 <groupdef id="mainwindow">
 
     <layer image="mainbg"/>
+
+    <rect x="2" y="20" color="255,252,229" ghost="1"/>
+
+    <layer x="2" y="20" image="wallpaper"   alpha="20" ghost="1"/> <layer x="2" y="146" image="wallpaper"   alpha="20" ghost="1"/>
+    <layer x="96" y="20" image="wallpaper"  alpha="20" ghost="1"/> <layer x="96" y="146" image="wallpaper"  alpha="20" ghost="1"/> 
+    <layer x="190" y="20" image="wallpaper" alpha="20" ghost="1"/> <layer x="190" y="146" image="wallpaper" alpha="20" ghost="1"/>
+    <layer x="284" y="20" image="wallpaper" alpha="20" ghost="1"/> <layer x="284" y="146" image="wallpaper" alpha="20" ghost="1"/>
+
     <rect x="11" y="33" w="146" h="54" color="255,255,255" filled="1"/>
     <rect x="11" y="33" w="146" h="54" color="0,0,0"/>
 
