@@ -1,5 +1,7 @@
 <elements>
 
     <bitmap id="mainbg" file="images/main.png"/>
+    <bitmap id="async" file="images/text.png"/>
+    <bitmapfont id="async.font" file="async" charwidth="9" charheight="8" hspacing="0" vspacing="0"/>
 
 </elements>
