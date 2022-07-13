@@ -28,9 +28,9 @@
     <text id="timer" x="11" y="90" w="152" h="15" display="time" font="player.BIGNUM" align="center" timecolonwidth="12"/>
     <layer id="TimerTrigger" x="11" y="90" w="152" h="15"/>
 
-    <rect x="11" y="116" w="156" h="12" color="0,0,0" ghost="1"/>
+    <rect id="stbox" x="11" y="116" w="146" h="12" color="0,0,0" ghost="1"/>
 
-    <Songticker id="songticker" x="13" y="118" w="152" h="9" font="async.font"/>
+    <Songticker id="songticker" x="13" y="118" w="142" h="9" font="async.font"/>
 
 </groupdef>
 
