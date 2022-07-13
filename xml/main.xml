@@ -12,6 +12,13 @@
     <text x="160" y="60" w="900" h="9" text="Mono/Stereo" font="async.font" color="0,0,0"/>
     <text x="160" y="69" w="900" h="9" text="Playlist Position" font="async.font" color="0,0,0"/>
 
+    <rect x="310" y="131" w="39" h="29" color="0,0,0" ghost="1"/>
+    <rect x="311" y="132" w="37" h="27" color="43,44,233" filled="1" ghost="1"/>
+    <layer x="311" y="132" image="asynclogo" ghost="1"/>
+
+    <text id="timer" x="11" y="90" w="152" h="15" display="time" font="player.BIGNUM" align="center" timecolonwidth="12"/>
+    <layer id="TimerTrigger" x="11" y="90" w="152" h="15"/>
+
 </groupdef>
 
 
