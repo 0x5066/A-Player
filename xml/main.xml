@@ -9,28 +9,28 @@
     <layer x="190" y="20" image="wallpaper" alpha="13" ghost="1"/> <layer x="190" y="146" image="wallpaper" alpha="13" ghost="1"/>
     <layer x="284" y="20" image="wallpaper" alpha="13" ghost="1"/> <layer x="284" y="146" image="wallpaper" alpha="13" ghost="1"/>
 
-    <rect x="11" y="33" w="146" h="54" color="255,255,255" filled="1"/>
-    <rect x="11" y="33" w="146" h="54" color="0,0,0"/>
+    <rect x="11" y="29" w="146" h="54" color="255,255,255" filled="1"/>
+    <rect x="11" y="29" w="146" h="54" color="0,0,0"/>
 
-    <vis id="wa.vis" x="12" y="34" w="144" h="52" colorallosc="0,0,0" colorosc5="0,0,0" fps="60" colorallbands="0,0,0" colorbandpeak="0,0,0"/>
-    <layer id="main.vis.trigger" x="12" y="34" w="144" h="52"/>
+    <vis id="wa.vis" x="12" y="30" w="144" h="52" colorallosc="0,0,0" colorosc5="0,0,0" fps="60" colorallbands="0,0,0" colorbandpeak="0,0,0"/>
+    <layer id="main.vis.trigger" x="12" y="34" w="144" h="52" tooltip="A-Player Entertainment Visualization"/>
 
-    <text x="160" y="33" w="900" h="9" text="Decoder Info" font="async.font" color="0,0,0"/>
-    <text x="160" y="42" w="900" h="9" text="Audio/Video" font="async.font" color="0,0,0"/>
-    <text x="160" y="51" w="900" h="9" display="Songbitrate" font="async.font" color="0,0,0"/>
-    <text x="160" y="60" w="900" h="9" text="Mono/Stereo" font="async.font" color="0,0,0"/>
+    <text x="160" y="29" w="900" h="9" text="Decoder Info" font="async.font" color="0,0,0"/>
+    <text x="160" y="39" w="900" h="9" text="Audio/Video" font="async.font" color="0,0,0"/>
+    <text x="160" y="49" w="900" h="9" display="Songbitrate" font="async.font" color="0,0,0"/>
+    <text x="160" y="59" w="900" h="9" text="Mono/Stereo" font="async.font" color="0,0,0"/>
     <text x="160" y="69" w="900" h="9" text="Playlist Position" font="async.font" color="0,0,0"/>
 
     <rect x="310" y="131" w="39" h="29" color="0,0,0" ghost="1"/>
     <rect x="311" y="132" w="37" h="27" color="43,44,233" filled="1" ghost="1"/>
     <layer x="311" y="132" image="asynclogo" ghost="1"/>
 
-    <text id="timer" x="11" y="90" w="152" h="15" display="time" font="player.BIGNUM" align="center" timecolonwidth="12"/>
-    <layer id="TimerTrigger" x="11" y="90" w="152" h="15"/>
+    <text id="timer" x="11" y="86" w="152" h="15" display="time" font="player.BIGNUM" align="center" timecolonwidth="12"/>
+    <layer id="TimerTrigger" x="11" y="86" w="152" h="15"/>
 
-    <rect id="stbox" x="11" y="116" w="146" h="12" color="0,0,0" ghost="1"/>
+    <rect id="stbox" x="11" y="104" w="146" h="12" color="0,0,0" ghost="1"/>
 
-    <Songticker id="songticker" x="13" y="118" w="142" h="9" font="async.font"/>
+    <Songticker id="songticker" x="13" y="106" w="142" h="9" font="async.font"/>
 
 </groupdef>
 
