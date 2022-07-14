@@ -15,6 +15,7 @@
 	<include file="xml/main.xml"/>
     <include file="xml/tooltips.xml"/>
 
+	<script file="scripts/actioninfo.maki"/>
     <script file="scripts/wa2songtimer.maki"/>
     <script file="scripts/wa2visualizer.maki"/>
 

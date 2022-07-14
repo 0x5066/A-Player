@@ -1,13 +1,6 @@
 <groupdef id="mainwindow">
 
-    <layer image="mainbg"/>
-
-    <layer x="2" y="20" image="br_bg" ghost="1"/>
-
-    <layer x="2" y="20" image="wallpaper"   alpha="13" ghost="1"/> <layer x="2" y="146" image="wallpaper"   alpha="13" ghost="1"/>
-    <layer x="96" y="20" image="wallpaper"  alpha="13" ghost="1"/> <layer x="96" y="146" image="wallpaper"  alpha="13" ghost="1"/> 
-    <layer x="190" y="20" image="wallpaper" alpha="13" ghost="1"/> <layer x="190" y="146" image="wallpaper" alpha="13" ghost="1"/>
-    <layer x="284" y="20" image="wallpaper" alpha="13" ghost="1"/> <layer x="284" y="146" image="wallpaper" alpha="13" ghost="1"/>
+    <!--layer image="mainbg"/-->
 
     <rect x="11" y="29" w="146" h="54" color="255,255,255" filled="1"/>
     <rect x="11" y="29" w="146" h="54" color="0,0,0"/>
@@ -15,11 +8,15 @@
     <vis id="wa.vis" x="12" y="30" w="144" h="52" colorallosc="0,0,0" colorosc5="0,0,0" fps="60" colorallbands="0,0,0" colorbandpeak="0,0,0"/>
     <layer id="main.vis.trigger" x="12" y="34" w="144" h="52" tooltip="A-Player Entertainment Visualization"/>
 
-    <text x="160" y="29" w="900" h="9" text="Decoder Info" font="async.font" color="0,0,0"/>
-    <text x="160" y="39" w="900" h="9" text="Audio/Video" font="async.font" color="0,0,0"/>
-    <text x="160" y="49" w="900" h="9" display="Songbitrate" font="async.font" color="0,0,0"/>
-    <text x="160" y="59" w="900" h="9" text="Mono/Stereo" font="async.font" color="0,0,0"/>
-    <text x="160" y="69" w="900" h="9" text="Playlist Position" font="async.font" color="0,0,0"/>
+    <text id="decoderinfo" x="160" y="29" w="188" h="9" text="Decoder Info" font="async.font" color="0,0,0"/>
+    <text id="av" x="160" y="39" w="188" h="9" font="async.font" color="0,0,0" visible="0"/>
+    <text id="khzbitrate" x="160" y="49" w="180" h="9" text="KBPS KHZ" font="async.font" color="0,0,0"/>
+    <text id="monoster" x="160" y="59" w="180" h="9" text="Mono/Stereo" font="async.font" color="0,0,0"/>
+    <text id="plpos" x="160" y="69" w="180" h="9" text="Playlist Position" font="async.font" color="0,0,0"/>
+
+    <script file="scripts/monoster.maki"/>
+    <script file="scripts/winamp1kbps.maki"/>
+    <script file="scripts/aplayerdisplay.maki"/>
 
     <rect x="310" y="131" w="39" h="29" color="0,0,0" ghost="1"/>
     <rect x="311" y="132" w="37" h="27" color="43,44,233" filled="1" ghost="1"/>
@@ -31,12 +28,28 @@
     <rect id="stbox" x="11" y="104" w="146" h="12" color="0,0,0" ghost="1"/>
 
     <Songticker id="songticker" x="13" y="106" w="142" h="9" font="async.font"/>
+    <text id="infoticker" x="11" y="106" w="144" h="9" font="async.font"/>
+
+    <rect x="11" y="119" w="72" h="12" color="0,0,0"/>
+    <Slider id="volume" action="volume" orientation="horizontal" x="12" y="119" w="70" h="12" thumb="volthumb" downThumb="volthumb"/>
+
+    <rect x="85" y="119" w="72" h="12" color="0,0,0"/>
+    <Slider id="balance" action="pan" orientation="horizontal" x="86" y="119" w="70" h="12" thumb="volthumb" downThumb="volthumb"/>
+
+    <button action="SYSMENU" x="4" y="2" w="21" h="16" activealpha="255" tooltip="A-Player Menu" rectrgn="1"/>	
 
 </groupdef>
 
 
 <container id="main" name="Main Window" default_y="0" default_visible="1" minimum_w="352" minimum_h="163" maximum_w="352" maximum_h="163">
 	<layout id="normal" background="mainbg" minimum_w="352" minimum_h="163" maximum_w="352" maximum_h="163" desktopalpha="1" droptarget="pldr">
-		<group id="mainwindow" w="352" h="163"/>
+        <layer x="2" y="20" image="br_bg" ghost="1"/>
+
+        <layer x="2" y="20" image="wallpaper"   alpha="13" ghost="1"/> <layer x="2" y="146" image="wallpaper"   alpha="13" ghost="1"/>
+        <layer x="96" y="20" image="wallpaper"  alpha="13" ghost="1"/> <layer x="96" y="146" image="wallpaper"  alpha="13" ghost="1"/> 
+        <layer x="190" y="20" image="wallpaper" alpha="13" ghost="1"/> <layer x="190" y="146" image="wallpaper" alpha="13" ghost="1"/>
+        <layer x="284" y="20" image="wallpaper" alpha="13" ghost="1"/> <layer x="284" y="146" image="wallpaper" alpha="13" ghost="1"/>
+        
+        <group id="mainwindow" w="352" h="163"/>
 	</layout>
 </container>
