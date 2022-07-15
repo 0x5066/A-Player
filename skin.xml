@@ -11,6 +11,7 @@
 		<screenshot></screenshot>
 	</skininfo>
 
+	<include file="xml/themes.xml"/>
 	<include file="xml/elements.xml"/>
 	<include file="xml/main.xml"/>
     <include file="xml/tooltips.xml"/>

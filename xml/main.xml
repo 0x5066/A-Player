@@ -2,6 +2,10 @@
 
     <!--layer image="mainbg"/-->
 
+    <button x="296" y="4" action="MINIMIZE" image="minn" hoverimage="minh" downimage="minp" rectrgn="1"/>
+    <button x="314" y="4" image="shaden" hoverimage="shadeh" downimage="shadep" rectrgn="1"/>
+    <button x="332" y="4" action="CLOSE" image="exitn" hoverimage="exith" downimage="exitp" rectrgn="1"/>
+
     <rect x="11" y="29" w="146" h="54" color="255,255,255" filled="1"/>
     <rect x="11" y="29" w="146" h="54" color="0,0,0"/>
 

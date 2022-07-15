@@ -1,8 +1,20 @@
 <elements>
 
-    <bitmap id="br_bg" file="images/br_bg.png"/>
+    <bitmap id="br_bg" file="images/br_bg.png" gammagroup="Wallpaper"/>
     <bitmap id="mainbg" file="images/main.png"/>
     <bitmap id="async" file="images/text.png"/>
+    <bitmap id="minn" file="images/buttons.png" x="0" y="0" w="14" h="12" gammagroup="Window button Normal"/>
+    <bitmap id="minh" file="images/buttons.png" x="0" y="0" w="14" h="12" gammagroup="Window button Hover"/>
+    <bitmap id="minp" file="images/buttons.png" x="0" y="0" w="14" h="12" gammagroup="Window button Pressed"/>
+
+    <bitmap id="shaden" file="images/buttons.png" x="18" y="0" w="14" h="12" gammagroup="Window button Normal"/>
+    <bitmap id="shadeh" file="images/buttons.png" x="18" y="0" w="14" h="12" gammagroup="Window button Hover"/>
+    <bitmap id="shadep" file="images/buttons.png" x="18" y="0" w="14" h="12" gammagroup="Window button Pressed"/>
+
+    <bitmap id="exitn" file="images/buttons.png" x="36" y="0" w="14" h="12" gammagroup="Window button Normal"/>
+    <bitmap id="exith" file="images/buttons.png" x="36" y="0" w="14" h="12" gammagroup="Window button Hover"/>
+    <bitmap id="exitp" file="images/buttons.png" x="36" y="0" w="14" h="12" gammagroup="Window button Pressed"/>
+
     <bitmap id="asynclogo" file="images/ASYNC.png"/>
     <bitmapfont id="async.font" file="async" charwidth="9" charheight="8" hspacing="0" vspacing="0"/>
     <bitmapfont id="player.BIGNUM" file="images/numfont.png" charwidth="15" charheight="15" hspacing="-3" vspacing="1"/>
