@@ -22,5 +22,6 @@
 	<script file="scripts/actioninfo.maki"/>
     <script file="scripts/wa2songtimer.maki"/>
     <script file="scripts/wa2visualizer.maki"/>
+	<script file="scripts/eqbtn.maki"/>
 
 </WinampAbstractionLayer>

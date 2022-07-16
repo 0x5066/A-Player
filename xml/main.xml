@@ -2,10 +2,6 @@
 
     <!--layer image="mainbg"/-->
 
-    <button x="296" y="4" action="MINIMIZE" image="minn" hoverimage="minh" downimage="minp" rectrgn="1"/>
-    <button x="314" y="4" image="shaden" hoverimage="shadeh" downimage="shadep" rectrgn="1"/>
-    <button x="332" y="4" action="CLOSE" image="exitn" hoverimage="exith" downimage="exitp" rectrgn="1"/>
-
     <rect x="11" y="29" w="146" h="54" color="255,255,255" filled="1"/>
     <rect x="11" y="29" w="146" h="54" color="0,0,0"/>
 
@@ -21,14 +17,6 @@
     <script file="scripts/monoster.maki"/>
     <script file="scripts/winamp1kbps.maki"/>
     <script file="scripts/aplayerdisplay.maki"/>
-
-    <rect x="310" y="131" w="39" h="29" color="0,0,0" ghost="1"/>
-    <rect x="311" y="132" w="37" h="27" color="43,44,233" filled="1" ghost="1"/>
-    <animatedlayer id="earth" x="316" y="132" image="spinningearth" autoplay="1" frameheight="27" ghost="1" speed="50" alpha="0"/>
-    <layer x="311" y="132" image="asynclogo" ghost="1"/>
-    <button id="aboutaplayer" x="310" y="131" w="39" h="29" rectrgn="1" action="TOGGLE" param="guid:{D6201408-476A-4308-BF1B-7BACA1124B12}" tooltip="About A-Player"/>
-
-    <script file="scripts/aboutbtn.maki"/>
 
     <text id="timer" x="11" y="86" w="152" h="15" display="time" font="player.BIGNUM" align="center" timecolonwidth="12"/>
     <layer id="TimerTrigger" x="11" y="86" w="152" h="15"/>
@@ -46,13 +34,24 @@
 
     <button action="SYSMENU" x="4" y="2" w="21" h="16" activealpha="255" tooltip="A-Player Menu" rectrgn="1"/>
 
-    <button id="pl" action="TOGGLE" param="guid:pl" x="160" y="104" image="pln" downImage="plh" activeImage="plp" tooltip="Toggle Playlist Editor"/>
+    <button id="pl" action="TOGGLE" param="guid:pl" x="160" y="104" image="pln" hoverImage="plh" downImage="plp" activeImage="plp" tooltip="Toggle Playlist Editor"/>
+
+    <button id="eq" x="160" y="119" image="eqn" hoverImage="eqh" downImage="eqp" tooltip="Switch to Equalizer"/>
 
 </groupdef>
 
+<groupdef id="equalizer">
+
+    <button id="ceq" x="4" y="22" image="ceqn" hoverImage="ceqh" downImage="ceqp" tooltip="Switch to Equalizer"/>
+
+</groupdef>
 
 <container id="main" name="Main Window" default_y="0" default_visible="1" minimum_w="352" minimum_h="163" maximum_w="352" maximum_h="163">
 	<layout id="normal" background="mainbg" minimum_w="352" minimum_h="163" maximum_w="352" maximum_h="163" desktopalpha="1" droptarget="pldr">
+        <button x="296" y="4" action="MINIMIZE" image="minn" hoverimage="minh" downimage="minp" rectrgn="1"/>
+        <button x="314" y="4" image="shaden" hoverimage="shadeh" downimage="shadep" rectrgn="1"/>
+        <button x="332" y="4" action="CLOSE" image="exitn" hoverimage="exith" downimage="exitp" rectrgn="1"/>
+        
         <layer x="2" y="20" image="br_bg" ghost="1"/>
 
         <layer x="2" y="20" image="wallpaper"   alpha="13" ghost="1"/> <layer x="2" y="146" image="wallpaper"   alpha="13" ghost="1"/>
@@ -61,5 +60,17 @@
         <layer x="284" y="20" image="wallpaper" alpha="13" ghost="1"/> <layer x="284" y="146" image="wallpaper" alpha="13" ghost="1"/>
         
         <group id="mainwindow" w="352" h="163"/>
+        <group id="equalizer" w="352" h="163" alpha="0"/>
+
+        <layer id="eql" x="120" y="2" image="eqlabel" alpha="0"/>
+        <layer id="mwblocker" x="2" y="20" w="352" h="163" ghost="1"/>
+
+        <rect x="310" y="131" w="39" h="29" color="0,0,0" ghost="1"/>
+        <rect x="311" y="132" w="37" h="27" color="43,44,233" filled="1" ghost="1"/>
+        <animatedlayer id="earth" x="316" y="132" image="spinningearth" autoplay="1" frameheight="27" ghost="1" speed="50" alpha="0"/>
+        <layer x="311" y="132" image="asynclogo" ghost="1"/>
+        <button id="aboutaplayer" x="310" y="131" w="39" h="29" rectrgn="1" action="TOGGLE" param="guid:{D6201408-476A-4308-BF1B-7BACA1124B12}" tooltip="About A-Player"/>
+
+        <script file="scripts/aboutbtn.maki"/>
 	</layout>
 </container>

@@ -19,6 +19,14 @@
     <bitmap id="plh" file="images/plbtn.png" gammagroup="Window button Hover"/>
     <bitmap id="plp" file="images/plbtn.png" gammagroup="Window button Pressed"/>
 
+    <bitmap id="eqn" file="images/eqbtn.png" gammagroup="Window button Normal"/>
+    <bitmap id="eqh" file="images/eqbtn.png" gammagroup="Window button Hover"/>
+    <bitmap id="eqp" file="images/eqbtn.png" gammagroup="Window button Pressed"/>
+
+    <bitmap id="ceqn" file="images/closeeqbtn.png" gammagroup="Window button Normal"/>
+    <bitmap id="ceqh" file="images/closeeqbtn.png" gammagroup="Window button Hover"/>
+    <bitmap id="ceqp" file="images/closeeqbtn.png" gammagroup="Window button Pressed"/>
+
     <bitmap id="asynclogo" file="images/ASYNC.png"/>
     <bitmapfont id="async.font" file="async" charwidth="9" charheight="8" hspacing="0" vspacing="0"/>
     <bitmapfont id="player.BIGNUM" file="images/numfont.png" charwidth="15" charheight="15" hspacing="-3" vspacing="1"/>
@@ -27,6 +35,8 @@
     <bitmap id="volthumb" file="images/volthumb.png"/>
 
     <bitmap id="spinningearth" file="images/The_Earth.png"/>
+
+    <bitmap id="eqlabel" file="images/eqlabel.png"/>
 
     <include file="system-colors.xml"/>
 
