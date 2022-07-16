@@ -15,11 +15,19 @@
     <bitmap id="exith" file="images/buttons.png" x="36" y="0" w="14" h="12" gammagroup="Window button Hover"/>
     <bitmap id="exitp" file="images/buttons.png" x="36" y="0" w="14" h="12" gammagroup="Window button Pressed"/>
 
+    <bitmap id="pln" file="images/plbtn.png" gammagroup="Window button Normal"/>
+    <bitmap id="plh" file="images/plbtn.png" gammagroup="Window button Hover"/>
+    <bitmap id="plp" file="images/plbtn.png" gammagroup="Window button Pressed"/>
+
     <bitmap id="asynclogo" file="images/ASYNC.png"/>
     <bitmapfont id="async.font" file="async" charwidth="9" charheight="8" hspacing="0" vspacing="0"/>
     <bitmapfont id="player.BIGNUM" file="images/numfont.png" charwidth="15" charheight="15" hspacing="-3" vspacing="1"/>
     <bitmap id="wallpaper" file="images/wallpaper.png"/>
     <bitmap id="wallpaper.mini" file="images/wallpaper_mini.png"/>
     <bitmap id="volthumb" file="images/volthumb.png"/>
+
+    <bitmap id="spinningearth" file="images/The_Earth.png"/>
+
+    <include file="system-colors.xml"/>
 
 </elements>

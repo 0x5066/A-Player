@@ -1,0 +1,205 @@
+<!-- =======================================================================================================
+
+  This file implements the following objects :
+
+    - Wasabi:StandardFrame:Status
+    - Wasabi:StandardFrame:NoStatus
+    - Wasabi:StandardFrame:Modal
+    - Wasabi:StandardFrame:Static
+
+    Available parameters :
+
+      padtitleleft  : resizes the title from the left by the specified amount of pixels
+      padtitleright : resizes the title from the right by the specified amount of pixels
+      content       : tells the object which group to instantiate in its client area
+
+======================================================================================================== -->
+
+<include file="standardframe-elements.xml" />
+
+<!-- =======================================================================================================
+
+  This group serves as a template for all the Wasabi:StandardFrame objects
+
+======================================================================================================== -->
+
+<groupdef id="wasabi.frame.layout">
+
+  <layer
+    id="window.top.left"
+    x="0" y="0"
+    image="wasabi.frame.top.left"
+  />
+  <layer
+    id="window.top"
+    x="4" y="0"
+    w="-24"
+    relatw="1"
+    image="wasabi.frame.top"
+    tile="1"
+  />
+  <layer
+    id="window.top.right"
+    x="-20" y="0"
+    relatx="1"
+    image="wasabi.frame.top.right"
+  />
+
+  <layer
+    id="window.left"
+    x="0" y="20"
+    h="0"
+    relath="1"
+    image="wasabi.frame.left"
+    tile="1"
+  />
+  <layer
+    id="window.right"
+    x="-2" y="20"
+    h="0"
+    relatx="1" relath="1"
+    image="wasabi.frame.right"
+    tile="1"
+  />
+
+  <!--layer id="window.resize.disabler" x="5" y="5" w="-10" h="-10" relatw="1" relath="1" cursor="cur.move"/-->
+
+  <LayoutStatus id="sysmenu.status" bg="0" x="5" y="3" w="14" h="9" includeonly="{system}" />
+  <hideobject target="sysmenu.status"/>
+  <Wasabi:TitleBar
+    id="wasabi.titlebar"
+    x="0" y="0"
+    w="-34" h="20"
+    relatw="1" ghost="1"
+  />
+
+  <button x="-20" y="4" relatx="1" action="CLOSE" image="exitn" hoverimage="exith" downimage="exitp" rectrgn="1"/>
+  <button action="SYSMENU" x="4" y="2" w="21" h="16" activealpha="255" tooltip="A-Player Menu" rectrgn="1"/>
+
+</groupdef>
+
+
+<!-- =======================================================================================================
+
+  <Wasabi:StandardFrame:Status /> implementation
+
+======================================================================================================== -->
+
+<groupdef id="wasabi.standardframe.statusbar" background="wasabi.frame.basetexture" sysregion="1" xuitag="Wasabi:StandardFrame:Status">
+
+    <group id="wasabi.frame.layout" x="0" y="0" w="0" relatw="1" h="-2" relath="1"/>
+
+  <layer
+    id="window.bottom.left"
+    x="0" y="-2"
+    relaty="1"
+    image="wasabi.frame.bottom.left"
+  />
+
+  <layer
+    id="window.bottom"
+    x="4" y="-2"
+    w="-24"
+    relatw="1" relaty="1"
+    image="wasabi.frame.bottom"
+    tile="1"
+  />
+
+  <layer
+    id="window.bottom.right"
+    x="-20" y="-2"
+    relatx="1" relaty="1"
+    image="wasabi.frame.bottom.right"
+  />
+
+  <layer
+    x="-20" y="-14"
+    relatx="1" relaty="1" w="19" h="13"
+    resize="bottomright" rectrgn="1"
+  />
+
+  <LayoutStatus id="standardframe.layoutstatus" x="2" y="-17" relaty="1" w="-4" relatw="1" h="15" exclude="{system}" />
+  <script id="standardframe.script" file="scripts/standardframe.maki" param="2,20,-4,-37,0,0,1,1" />
+
+</groupdef>
+
+
+<!-- =======================================================================================================
+
+  <Wasabi:StandardFrame:NoStatus /> implementation
+
+======================================================================================================== -->
+
+<groupdef id="wasabi.standardframe.nostatusbar" background="wasabi.frame.basetexture" sysregion="1" xuitag="Wasabi:StandardFrame:NoStatus">
+
+  <group id="wasabi.frame.layout" x="0" y="0" w="0" h="-2" relatw="1" relath="1" cursor="cur.normal"/>
+
+  <layer
+    id="window.bottom.left"
+    x="0" y="-2"
+    relaty="1"
+    image="wasabi.frame.bottom.left"
+  />
+
+  <layer
+    id="window.bottom"
+    x="4" y="-2"
+    w="-24"
+    relatw="1" relaty="1"
+    image="wasabi.frame.bottom"
+    tile="1"
+  />
+
+  <layer
+    id="window.bottom.right"
+    x="-20" y="-2"
+    relatx="1" relaty="1"
+    image="wasabi.frame.bottom.right"
+  />
+
+  <layer
+    x="-20" y="-14"
+    relatx="1" relaty="1" w="19" h="13"
+    resize="bottomright" rectrgn="1"
+  />
+
+  <script id="standardframe.script" file="scripts/standardframe.maki" param="2,20,-4,-22,0,0,1,1" />
+
+</groupdef>
+
+
+<!-- =======================================================================================================
+
+  <Wasabi:StandardFrame:Modal /> implementation
+
+======================================================================================================== -->
+
+<groupdef id="wasabi.standardframe.modal" inherit_group="wasabi.standardframe.nostatusbar" sysregion="1" xuitag="Wasabi:StandardFrame:Modal">
+  <group 
+    id="wasabi.panel"
+    x="5" y="15"
+    w="-10" h="-20"
+    relatw="1" relath="1"
+  />
+  <hideobject target="controlmenu;controlmenu.inactive"/>
+  <sendparams target="wasabi.titlebar" x="4" w="-24" relatw="1" />
+  <sendparams target="window.top.left;window.top;window.top.right;window.left;window.right;window.bottom.left.top;window.bottom.left;window.bottom.left.bottom;window.bottom.top;window.bottom;window.bottom.bottom;window.bottom.right.top;window.bottom.right;window.bottom.right.bottom" resize="0" />
+</groupdef>
+
+
+<!-- =======================================================================================================
+
+  <Wasabi:StandardFrame:Static /> implementation
+
+======================================================================================================== -->
+
+<groupdef id="wasabi.standardframe.static" inherit_group="wasabi.standardframe.nostatusbar" sysregion="1" xuitag="Wasabi:StandardFrame:Static">
+  <group 
+    id="wasabi.panel"
+    x="5" y="15"
+    w="-10" h="-20"
+    relatw="1" relath="1"
+  />
+  <sendparams target="window.top.left;window.top;window.top.right;window.left;window.right;window.bottom.left.top;window.bottom.left;window.bottom.left.bottom;window.bottom.top;window.bottom;window.bottom.bottom;window.bottom.right.top;window.bottom.right;window.bottom.right.bottom" resize="0" />
+<!--  <hideobject target="controlmenu;controlmenu.inactive"/> -->
+</groupdef>

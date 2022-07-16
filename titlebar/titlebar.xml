@@ -1,0 +1,44 @@
+<!-- =======================================================================================================
+
+  <Wasabi:TitleBar /> implmentation
+
+    Available parameters :
+
+      - All params for Group
+      - All params for Text
+
+    Required objects : (these objects are manipulated by the script, so overriding with script content inheritance
+                        will require you to have these objects. Otherwise, you should be fine)
+
+      - Group id="wasabi.titlebar.streak.left" 
+      - Group id="wasabi.titlebar.streak.right" 
+      - Layer id="mousetrap" (this object shoud cover the content of the group)
+
+======================================================================================================== -->
+
+<elements>
+
+<bitmapfont id="studio.component.title" file="titlebar/titlebarfont.png" hspacing="0" vspacing="0" charwidth="22" charheight="20"/>
+<bitmapfont id="studio.component.title.smaller" file="titlebar/titlebarfont_smaller.png" hspacing="0" vspacing="0" charwidth="14" charheight="12"/>
+
+</elements>
+
+<groupdef id="wasabi.titlebar" xuitag="Wasabi:TitleBar" embed_xui="window.titlebar.title">
+
+  <text
+    id="window.titlebar.title"
+    x="2" y="-2"
+    w="24" h="20"
+    default=":componentname"
+    font="studio.component.title"/>
+
+  <text
+    id="window.titlebar.title"
+    x="24" y="2"
+    w="0" h="20" relatw="1" offsetx="-16"
+    default=":componentname"
+    font="studio.component.title.smaller"/>
+
+  <layer id="mousetrap" x="0" y="0" w="0" h="0" relatw="1" relath="1" move="1"/>
+  <script id="titlebar" file="titlebar/titlebar.maki"/>
+</groupdef>

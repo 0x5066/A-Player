@@ -11,6 +11,9 @@
 		<screenshot></screenshot>
 	</skininfo>
 
+	<include file="standardframe/standardframe.xml"/>
+	<include file="titlebar/titlebar.xml"/>
+
 	<include file="xml/themes.xml"/>
 	<include file="xml/elements.xml"/>
 	<include file="xml/main.xml"/>

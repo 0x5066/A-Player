@@ -1,0 +1,19 @@
+<elements>
+
+<bitmap id="wasabi.frame.top.left" file="standardframe/windowframe.png" w="4" h="20"/>
+<bitmap id="wasabi.frame.top" file="standardframe/windowframe.png" x="5" w="1" h="20"/>
+<bitmap id="wasabi.frame.top.right" file="standardframe/windowframe.png" x="7" w="20" h="20"/>
+
+<bitmap id="wasabi.frame.bottom.left" file="standardframe/windowframe.png" x="0" y="24" w="4" h="2"/>
+<bitmap id="wasabi.frame.bottom" file="standardframe/windowframe.png" x="5" y="24" w="1" h="2"/>
+<bitmap id="wasabi.frame.bottom.right" file="standardframe/windowframe.png" x="7" y="24" w="20" h="2"/>
+
+<bitmap id="wasabi.frame.left" file="standardframe/windowframe.png" x="0" y="21" w="2" h="2"/>
+<bitmap id="wasabi.frame.right" file="standardframe/windowframe.png" x="25" y="21" w="2" h="2"/>
+
+<!--bitmap id="wasabi.button.close" file="skin/gen.bmp" x="144" y="3" w="9" h="9"/>
+<bitmap id="wasabi.button.close.pressed" file="skin/gen.bmp" x="148" y="42" w="9" h="9"/-->
+
+<bitmap id="wasabi.frame.basetexture" file="$solid" h="64" w="64" color="128,128,128" gammagroup="Wallpaper"/>
+
+</elements>

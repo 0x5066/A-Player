@@ -24,7 +24,11 @@
 
     <rect x="310" y="131" w="39" h="29" color="0,0,0" ghost="1"/>
     <rect x="311" y="132" w="37" h="27" color="43,44,233" filled="1" ghost="1"/>
+    <animatedlayer id="earth" x="316" y="132" image="spinningearth" autoplay="1" frameheight="27" ghost="1" speed="50" alpha="0"/>
     <layer x="311" y="132" image="asynclogo" ghost="1"/>
+    <button id="aboutaplayer" x="310" y="131" w="39" h="29" rectrgn="1" action="TOGGLE" param="guid:{D6201408-476A-4308-BF1B-7BACA1124B12}" tooltip="About A-Player"/>
+
+    <script file="scripts/aboutbtn.maki"/>
 
     <text id="timer" x="11" y="86" w="152" h="15" display="time" font="player.BIGNUM" align="center" timecolonwidth="12"/>
     <layer id="TimerTrigger" x="11" y="86" w="152" h="15"/>
@@ -40,7 +44,9 @@
     <rect x="85" y="119" w="72" h="12" color="0,0,0"/>
     <Slider id="balance" action="pan" orientation="horizontal" x="86" y="119" w="70" h="12" thumb="volthumb" downThumb="volthumb"/>
 
-    <button action="SYSMENU" x="4" y="2" w="21" h="16" activealpha="255" tooltip="A-Player Menu" rectrgn="1"/>	
+    <button action="SYSMENU" x="4" y="2" w="21" h="16" activealpha="255" tooltip="A-Player Menu" rectrgn="1"/>
+
+    <button id="pl" action="TOGGLE" param="guid:pl" x="160" y="104" image="pln" downImage="plh" activeImage="plp" tooltip="Toggle Playlist Editor"/>
 
 </groupdef>
 

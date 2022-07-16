@@ -1,9 +1,9 @@
-<gammaset id="The Backrooms">
+<gammaset id="Hallways">
 
   <gammagroup id="Wallpaper" value="3386,3321,-3386" gray="0" boost="0" />
   <gammagroup id="Window button Normal" value="3067,2642,-2217" gray="0" boost="0" />
   <gammagroup id="Window button Hover" value="-1128,2225,1451" gray="0" boost="0" />
-  <gammagroup id="Window button Pressed" value="2451,-2075,-2146" gray="0" boost="0" />
+  <gammagroup id="Window button Pressed" value="4096,3741,-96" gray="0" boost="0" />
 
 </gammaset>
 
@@ -11,5 +11,5 @@
   <gammagroup id="Wallpaper" value="-834,691,1755" gray="0" boost="0" />
   <gammagroup id="Window button Normal" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window button Hover" value="161,0,-419" gray="0" boost="0" />
-  <gammagroup id="Window button Pressed" value="3883,-3423,-3777" gray="0" boost="0" />
+  <gammagroup id="Window button Pressed" value="-2967,903,2547" gray="0" boost="0" />
 </gammaset>
