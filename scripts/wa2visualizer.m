@@ -51,7 +51,7 @@ Global PopUpMenu stylemenu;
 Global PopUpMenu fpsmenu;
 //Global PopUpMenu vumenu;
 
-Global Int currentMode, a_falloffspeed, p_falloffspeed, osc_render, ana_render, a_coloring, v_fps/*, smoothvu*/;
+Global Int currentMode, a_falloffspeed, p_falloffspeed, osc_render, ana_render, v_fps/*, smoothvu*/;
 Global Boolean show_peaks/*, isShade, compatibility, playLED, WA265MODE, WA5MODE, SKINNEDFONT*/;
 Global layer MainTrigger, MainShadeTrigger, VTrigger;
 
@@ -155,10 +155,6 @@ setVisModeRBD(){
 
 	visMenu.addSubmenu(anasettings, "Spectrum analyzer options");
 
-	anasettings.addCommand("Normal style", 400, a_coloring == 0, 0);
-	anasettings.addCommand("Fire style", 402, a_coloring == 2, 0);
-	anasettings.addCommand("Line style", 403, a_coloring == 3, 0);
-	anasettings.addSeparator();
 	anasettings.addCommand("Peaks", 101, show_peaks == 1, 0);
 	anasettings.addSeparator();
 	anasettings.addCommand("Thin bands", 701, ana_render == 1, 0);
@@ -209,7 +205,6 @@ refreshVisSettings ()
 	p_falloffspeed = getPrivateInt(getSkinName(), "Visualizer Peaks falloff", 1);
 	osc_render = getPrivateInt(getSkinName(), "Oscilloscope Settings", 3);
 	ana_render = getPrivateInt(getSkinName(), "Spectrum Analyzer Settings", 1);
-	a_coloring = getPrivateInt(getSkinName(), "Visualizer analyzer coloring", 0);
 	v_fps = getPrivateInt(getSkinName(), "Visualizer Refresh rate", 3);
 
 	MainVisualizer.setXmlParam("Peaks", integerToString(show_peaks));
@@ -229,31 +224,6 @@ refreshVisSettings ()
 	Vvisualizer.setXmlParam("falloff", integerToString(a_falloffspeed));
 	Vvisualizer.setXmlParam("oscstyle", integerToString(osc_render));
 	Vvisualizer.setXmlParam("bandwidth", integerToString(ana_render));*/
-
-	if (a_coloring == 0)
-	{
-		MainVisualizer.setXmlParam("coloring", "Normal");
-		//MainShadeVisualizer.setXmlParam("coloring", "Normal");
-		//Vvisualizer.setXmlParam("coloring", "Normal");
-	}
-	else if (a_coloring == 1)
-	{
-		MainVisualizer.setXmlParam("coloring", "Normal");
-		//MainShadeVisualizer.setXmlParam("coloring", "Normal");
-		//Vvisualizer.setXmlParam("coloring", "Normal");
-	}
-	else if (a_coloring == 2)
-	{
-		MainVisualizer.setXmlParam("coloring", "Fire");
-		//MainShadeVisualizer.setXmlParam("coloring", "Fire");
-		//Vvisualizer.setXmlParam("coloring", "Fire");
-	}
-	else if (a_coloring == 3)
-	{
-		MainVisualizer.setXmlParam("coloring", "Line");
-		//MainShadeVisualizer.setXmlParam("coloring", "Line");
-		//Vvisualizer.setXmlParam("coloring", "Line");
-	}
 
 	if (osc_render == 0)
 		{
@@ -403,37 +373,7 @@ ProcessMenuResult (int a)
 		setPrivateInt(getSkinName(), "Visualizer analyzer falloff", a_falloffspeed);
 	}
 
-else if (a >= 400 && a <= 403)
-	{
-		a_coloring = a - 400;
-		if (a_coloring == 0)
-		{
-			MainVisualizer.setXmlParam("coloring", "Normal");
-			//MainShadeVisualizer.setXmlParam("coloring", "Normal");
-			//Vvisualizer.setXmlParam("coloring", "Normal");
-		}
-		else if (a_coloring == 1)
-		{
-			MainVisualizer.setXmlParam("coloring", "Normal");
-			//MainShadeVisualizer.setXmlParam("coloring", "Normal");
-			//Vvisualizer.setXmlParam("coloring", "Normal");
-		}
-		else if (a_coloring == 2)
-		{
-			MainVisualizer.setXmlParam("coloring", "Fire");
-			//MainShadeVisualizer.setXmlParam("coloring", "Fire");
-			//Vvisualizer.setXmlParam("coloring", "Fire");
-		}
-		else if (a_coloring == 3)
-		{
-			MainVisualizer.setXmlParam("coloring", "Line");
-			//MainShadeVisualizer.setXmlParam("coloring", "Line");
-			//Vvisualizer.setXmlParam("coloring", "Line");
-		}
-		setPrivateInt(getSkinName(), "Visualizer analyzer coloring", a_coloring);
-	}
-
-	else if (a >= 600 && a <= 603)
+else if (a >= 600 && a <= 603)
 	{
 		osc_render = a - 600;
 		if (osc_render == 0)
