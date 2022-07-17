@@ -38,6 +38,26 @@
 
     <bitmap id="eqlabel" file="images/eqlabel.png"/>
 
+    <bitmap id="eqbarbg" file="images/eqbar.png" w="7" h="50"/>
+    <bitmap id="eqbarbtn" file="images/eqbar.png" x="7" w="5" h="5"/>
+
+    <bitmap id="eqonn" file="images/eqon.png" gammagroup="Window button Normal"/>
+    <bitmap id="eqonh" file="images/eqon.png" gammagroup="Window button Hover"/>
+    <bitmap id="eqonp" file="images/eqon.png" gammagroup="Window button Pressed"/>
+
+    <bitmap id="eqauton" file="images/eqauto.png" gammagroup="Window button Normal"/>
+    <bitmap id="eqautoh" file="images/eqauto.png" gammagroup="Window button Hover"/>
+    <bitmap id="eqautop" file="images/eqauto.png" gammagroup="Window button Pressed"/>
+
+    <bitmap id="eqpresetsn" file="images/eqpresets.png" gammagroup="Window button Normal"/>
+    <bitmap id="eqpresetsh" file="images/eqpresets.png" gammagroup="Window button Hover"/>
+    <bitmap id="eqpresetsp" file="images/eqpresets.png" gammagroup="Window button Pressed"/>
+
+    <bitmap id="eqlabel.iso" file="images/eq_labels.png" w="245" h="5"/>
+    <bitmap id="eqlabel.wa" file="images/eq_labels.png" y="5" w="245" h="5"/>
+
+    <bitmap id="eq.zero" file="images/0db.png"/>
+
     <include file="system-colors.xml"/>
 
 </elements>

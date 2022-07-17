@@ -40,9 +40,52 @@
 
 </groupdef>
 
+<groupdef id="eqbars">
+
+    <layer x="0" y="0" image="eqbarbg" ghost="1"/>
+
+    <layer x="41" y="0" image="eqbarbg" ghost="1"/>
+    <layer x="61" y="0" image="eqbarbg" ghost="1"/>
+    <layer x="81" y="0" image="eqbarbg" ghost="1"/>
+    <layer x="101" y="0" image="eqbarbg" ghost="1"/>
+    <layer x="121" y="0" image="eqbarbg" ghost="1"/>
+    <layer x="141" y="0" image="eqbarbg" ghost="1"/>
+    <layer x="161" y="0" image="eqbarbg" ghost="1"/>
+    <layer x="181" y="0" image="eqbarbg" ghost="1"/>
+    <layer x="201" y="0" image="eqbarbg" ghost="1"/>
+    <layer x="221" y="0" image="eqbarbg" ghost="1"/>
+
+    <slider action="EQ_PREAMP" x="1" y="1" w="5" h="48" orientation="vertical" thumb="eqbarbtn" downThumb="eqbarbtn"/>
+    <slider action="EQ_BAND" param="1" x="42" y="1" w="5" h="48" orientation="vertical" thumb="eqbarbtn" downThumb="eqbarbtn"/>
+    <slider action="EQ_BAND" param="2" x="62" y="1" w="5" h="48" orientation="vertical" thumb="eqbarbtn" downThumb="eqbarbtn"/>
+    <slider action="EQ_BAND" param="3" x="82" y="1" w="5" h="48" orientation="vertical" thumb="eqbarbtn" downThumb="eqbarbtn"/>
+    <slider action="EQ_BAND" param="4" x="102" y="1" w="5" h="48" orientation="vertical" thumb="eqbarbtn" downThumb="eqbarbtn"/>
+    <slider action="EQ_BAND" param="5" x="122" y="1" w="5" h="48" orientation="vertical" thumb="eqbarbtn" downThumb="eqbarbtn"/>
+    <slider action="EQ_BAND" param="6" x="142" y="1" w="5" h="48" orientation="vertical" thumb="eqbarbtn" downThumb="eqbarbtn"/>
+    <slider action="EQ_BAND" param="7" x="162" y="1" w="5" h="48" orientation="vertical" thumb="eqbarbtn" downThumb="eqbarbtn"/>
+    <slider action="EQ_BAND" param="8" x="182" y="1" w="5" h="48" orientation="vertical" thumb="eqbarbtn" downThumb="eqbarbtn"/>
+    <slider action="EQ_BAND" param="9" x="202" y="1" w="5" h="48" orientation="vertical" thumb="eqbarbtn" downThumb="eqbarbtn"/>
+    <slider action="EQ_BAND" param="10" x="222" y="1" w="5" h="48" orientation="vertical" thumb="eqbarbtn" downThumb="eqbarbtn"/>
+
+</groupdef>
+
 <groupdef id="equalizer">
 
-    <button id="ceq" x="4" y="22" image="ceqn" hoverImage="ceqh" downImage="ceqp" tooltip="Switch to Equalizer"/>
+    <button id="ceq" x="4" y="147" image="ceqn" hoverImage="ceqh" downImage="ceqp" tooltip="Switch to A-Player Main Window"/>
+
+    <group id="eqbars" x="62" y="78"/>
+
+    <eqvis x="88" y="34" w="187" h="32" colortop="0,0,0" colormiddle="0,0,0" colorbottom="0,0,0" colorpreamp="0,0,0"/>
+
+    <ToggleButton id="eq.on" action="EQ_TOGGLE" x="4" y="133" image="eqonn" hoverimage="eqonh" downimage="eqonp" activeImage="eqonp"/>
+    <ToggleButton id="eq.auto" action="EQ_AUTO" x="30" y="133" image="eqauton" hoverimage="eqautoh" downimage="eqautop" activeImage="eqautop"/>
+    <togglebutton id="eq.presets" x="73" y="133" image="eqpresetsn" hoverimage="eqpresetsh" downimage="eqpresetsp" action="MENU" param="PRESETS"/>
+
+    <layer id="eq.mode" x="49" y="70" image="eqlabel.wa" ghost="1"/>
+    <script file="scripts/eq_iso_mode.maki"/>
+
+    <button id="0db" x="77" y="100" image="eq.zero" downimage="eq.zero" rectrgn="1"/>
+    <script file="scripts/eqmain_dbs.maki"/>
 
 </groupdef>
 
