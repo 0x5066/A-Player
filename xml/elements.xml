@@ -58,6 +58,42 @@
 
     <bitmap id="eq.zero" file="images/0db.png"/>
 
+    <bitmap id="visbox" file="images/boxes.png" w="146" h="54"/>
+    <bitmap id="sgbox" file="images/boxes.png" y="54" w="146" h="12"/>
+    <bitmap id="volbalbox" file="images/boxes.png" y="66" w="72" h="16"/>
+
+    <bitmap id="prevn" file="images/cbuttons.png" x="0" y="0" w="14" h="12" gammagroup="Window button Normal"/>
+    <bitmap id="prevh" file="images/cbuttons.png" x="0" y="0" w="14" h="12" gammagroup="Window button Hover"/>
+    <bitmap id="prevp" file="images/cbuttons.png" x="0" y="0" w="14" h="12" gammagroup="Window button Pressed"/>
+
+    <bitmap id="playn" file="images/cbuttons.png" x="14" y="0" w="14" h="12" gammagroup="Window button Normal"/>
+    <bitmap id="playh" file="images/cbuttons.png" x="14" y="0" w="14" h="12" gammagroup="Window button Hover"/>
+    <bitmap id="playp" file="images/cbuttons.png" x="14" y="0" w="14" h="12" gammagroup="Window button Pressed"/>
+
+    <bitmap id="pausen" file="images/cbuttons.png" x="28" y="0" w="14" h="12" gammagroup="Window button Normal"/>
+    <bitmap id="pauseh" file="images/cbuttons.png" x="28" y="0" w="14" h="12" gammagroup="Window button Hover"/>
+    <bitmap id="pausep" file="images/cbuttons.png" x="28" y="0" w="14" h="12" gammagroup="Window button Pressed"/>
+
+    <bitmap id="stopn" file="images/cbuttons.png" x="42" y="0" w="14" h="12" gammagroup="Window button Normal"/>
+    <bitmap id="stoph" file="images/cbuttons.png" x="42" y="0" w="14" h="12" gammagroup="Window button Hover"/>
+    <bitmap id="stopp" file="images/cbuttons.png" x="42" y="0" w="14" h="12" gammagroup="Window button Pressed"/>
+
+    <bitmap id="nextn" file="images/cbuttons.png" x="56" y="0" w="14" h="12" gammagroup="Window button Normal"/>
+    <bitmap id="nexth" file="images/cbuttons.png" x="56" y="0" w="14" h="12" gammagroup="Window button Hover"/>
+    <bitmap id="nextp" file="images/cbuttons.png" x="56" y="0" w="14" h="12" gammagroup="Window button Pressed"/>
+
+    <bitmap id="ejectn" file="images/cbuttons.png" x="70" y="0" w="14" h="12" gammagroup="Window button Normal"/>
+    <bitmap id="ejecth" file="images/cbuttons.png" x="70" y="0" w="14" h="12" gammagroup="Window button Hover"/>
+    <bitmap id="ejectp" file="images/cbuttons.png" x="70" y="0" w="14" h="12" gammagroup="Window button Pressed"/>
+
+    <bitmap id="repeatn" file="images/cbuttons.png" x="84" y="0" w="57" h="12" gammagroup="Window button Normal"/>
+    <bitmap id="repeath" file="images/cbuttons.png" x="84" y="0" w="57" h="12" gammagroup="Window button Hover"/>
+    <bitmap id="repeatp" file="images/cbuttons.png" x="84" y="0" w="57" h="12" gammagroup="Window button Pressed"/>
+
+    <bitmap id="shufflen" file="images/cbuttons.png" x="141" y="0" w="63" h="12" gammagroup="Window button Normal"/>
+    <bitmap id="shuffleh" file="images/cbuttons.png" x="141" y="0" w="63" h="12" gammagroup="Window button Hover"/>
+    <bitmap id="shufflep" file="images/cbuttons.png" x="141" y="0" w="63" h="12" gammagroup="Window button Pressed"/>
+
     <include file="system-colors.xml"/>
 
 </elements>

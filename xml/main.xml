@@ -2,8 +2,7 @@
 
     <!--layer image="mainbg"/-->
 
-    <rect x="11" y="29" w="146" h="54" color="255,255,255" filled="1"/>
-    <rect x="11" y="29" w="146" h="54" color="0,0,0"/>
+    <layer x="11" y="29" image="visbox"/>
 
     <vis id="wa.vis" x="12" y="30" w="144" h="52" colorallosc="0,0,0" colorosc5="0,0,0" fps="60" colorallbands="0,0,0" colorbandpeak="0,0,0"/>
     <layer id="main.vis.trigger" x="12" y="34" w="144" h="52" tooltip="A-Player Entertainment Visualization"/>
@@ -21,15 +20,15 @@
     <text id="timer" x="11" y="86" w="152" h="15" display="time" font="player.BIGNUM" align="center" timecolonwidth="12"/>
     <layer id="TimerTrigger" x="11" y="86" w="152" h="15"/>
 
-    <rect id="stbox" x="11" y="104" w="146" h="12" color="0,0,0" ghost="1"/>
+    <layer x="11" y="104" image="sgbox"/>
 
     <Songticker id="songticker" x="13" y="106" w="142" h="9" font="async.font"/>
     <text id="infoticker" x="11" y="106" w="144" h="9" font="async.font"/>
 
-    <rect x="11" y="119" w="72" h="12" color="0,0,0"/>
+    <layer x="11" y="119" image="volbalbox"/>
     <Slider id="volume" action="volume" orientation="horizontal" x="12" y="119" w="70" h="12" thumb="volthumb" downThumb="volthumb"/>
 
-    <rect x="85" y="119" w="72" h="12" color="0,0,0"/>
+    <layer x="85" y="119" image="volbalbox"/>
     <Slider id="balance" action="pan" orientation="horizontal" x="86" y="119" w="70" h="12" thumb="volthumb" downThumb="volthumb"/>
 
     <button action="SYSMENU" x="4" y="2" w="21" h="16" activealpha="255" tooltip="A-Player Menu" rectrgn="1"/>
@@ -37,6 +36,21 @@
     <button id="pl" action="TOGGLE" param="guid:pl" x="160" y="104" image="pln" hoverImage="plh" downImage="plp" activeImage="plp" tooltip="Toggle Playlist Editor"/>
 
     <button id="eq" x="160" y="119" image="eqn" hoverImage="eqh" downImage="eqp" tooltip="Switch to Equalizer"/>
+
+    <button action="PREV" 	x="11"  y="133" image="prevn"	hoverimage="prevh"	 downimage="prevp"	tooltip="Previous Track"/>
+	<button action="PLAY" 	x="27"  y="133" image="playn"	hoverimage="playh"	 downimage="playp"	tooltip="Play"			/>
+	<button action="PAUSE" 	x="43"  y="133"	image="pausen"	hoverimage="pauseh"  downimage="pausep"	tooltip="Pause"			/>
+	<button action="STOP" 	x="59"  y="133"	image="stopn"	hoverimage="stoph"	 downimage="stopp"	tooltip="Stop"			/>
+	<button action="NEXT" 	x="75" y="133"	image="nextn"	hoverimage="nexth"	 downimage="nextp"	tooltip="Next Track"	/>
+    <button action="EJECT" 	x="91" y="133"  image="ejectn" hoverimage="ejecth" downimage="ejectp" tooltip="Open File(s)"/>
+
+    <togglebutton id="Repeat" x="160" y="133" image="repeatn"
+		hoverimage="repeath" downImage="repeatp" activeImage="repeatp"
+		cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" cfgvals="0;1;-1"/>
+	
+	<togglebutton id="Shuffle" x="219" y="133" image="shufflen"
+		hoverimage="shuffleh" downImage="shufflep" activeImage="shufflep"
+		cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"/>
 
 </groupdef>
 
@@ -115,5 +129,21 @@
         <button id="aboutaplayer" x="310" y="131" w="39" h="29" rectrgn="1" action="TOGGLE" param="guid:{D6201408-476A-4308-BF1B-7BACA1124B12}" tooltip="About A-Player"/>
 
         <script file="scripts/aboutbtn.maki"/>
+
+        <layer
+            id="window.left"
+            x="0" y="20"
+            h="0"
+            relath="1"
+            image="wasabi.frame.left"
+        />
+        <layer
+            id="window.right"
+            x="-2" y="20"
+            h="0"
+            relatx="1" relath="1"
+            image="wasabi.frame.right"
+            tile="1"
+        />
 	</layout>
 </container>
