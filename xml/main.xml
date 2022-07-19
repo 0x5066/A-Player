@@ -37,18 +37,18 @@
 
     <button id="eq" x="160" y="119" image="eqn" hoverImage="eqh" downImage="eqp" tooltip="Switch to Equalizer"/>
 
-    <button action="PREV" 	x="11"  y="133" image="prevn"	hoverimage="prevh"	 downimage="prevp"	tooltip="Previous Track"/>
-	<button action="PLAY" 	x="27"  y="133" image="playn"	hoverimage="playh"	 downimage="playp"	tooltip="Play"			/>
-	<button action="PAUSE" 	x="43"  y="133"	image="pausen"	hoverimage="pauseh"  downimage="pausep"	tooltip="Pause"			/>
-	<button action="STOP" 	x="59"  y="133"	image="stopn"	hoverimage="stoph"	 downimage="stopp"	tooltip="Stop"			/>
-	<button action="NEXT" 	x="75" y="133"	image="nextn"	hoverimage="nexth"	 downimage="nextp"	tooltip="Next Track"	/>
-    <button action="EJECT" 	x="91" y="133"  image="ejectn" hoverimage="ejecth" downimage="ejectp" tooltip="Open File(s)"/>
+    <button action="PREV" 	x="11"  y="134" image="prevn"	hoverimage="prevh"	 downimage="prevp"	tooltip="Previous Track"/>
+	<button action="PLAY" 	x="27"  y="134" image="playn"	hoverimage="playh"	 downimage="playp"	tooltip="Play"			/>
+	<button action="PAUSE" 	x="43"  y="134"	image="pausen"	hoverimage="pauseh"  downimage="pausep"	tooltip="Pause"			/>
+	<button action="STOP" 	x="59"  y="134"	image="stopn"	hoverimage="stoph"	 downimage="stopp"	tooltip="Stop"			/>
+	<button action="NEXT" 	x="75" y="134"	image="nextn"	hoverimage="nexth"	 downimage="nextp"	tooltip="Next Track"	/>
+    <button action="EJECT" 	x="91" y="134"  image="ejectn" hoverimage="ejecth" downimage="ejectp" tooltip="Open File(s)"/>
 
-    <togglebutton id="Repeat" x="160" y="133" image="repeatn"
+    <togglebutton id="Repeat" x="160" y="134" image="repeatn"
 		hoverimage="repeath" downImage="repeatp" activeImage="repeatp"
 		cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" cfgvals="0;1;-1"/>
 	
-	<togglebutton id="Shuffle" x="219" y="133" image="shufflen"
+	<togglebutton id="Shuffle" x="219" y="134" image="shufflen"
 		hoverimage="shuffleh" downImage="shufflep" activeImage="shufflep"
 		cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"/>
 
@@ -92,7 +92,7 @@
     <eqvis x="88" y="34" w="187" h="32" colortop="0,0,0" colormiddle="0,0,0" colorbottom="0,0,0" colorpreamp="0,0,0"/>
 
     <ToggleButton id="eq.on" action="EQ_TOGGLE" x="4" y="133" image="eqonn" hoverimage="eqonh" downimage="eqonp" activeImage="eqonp"/>
-    <ToggleButton id="eq.auto" action="EQ_AUTO" x="30" y="133" image="eqauton" hoverimage="eqautoh" downimage="eqautop" activeImage="eqautop"/>
+    <ToggleButton id="eq.auto" action="EQ_AUTO" x="29" y="133" image="eqauton" hoverimage="eqautoh" downimage="eqautop" activeImage="eqautop"/>
     <togglebutton id="eq.presets" x="73" y="133" image="eqpresetsn" hoverimage="eqpresetsh" downimage="eqpresetsp" action="MENU" param="PRESETS"/>
 
     <layer id="eq.mode" x="49" y="70" image="eqlabel.wa" ghost="1"/>
